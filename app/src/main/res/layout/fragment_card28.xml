@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="card1_0"
+    android:background="#aeddea">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_height="50dp"
+        android:onClick="start"
+        android:text="Start"
+        android:layout_width="80dp"
+        android:background="@drawable/button_border"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_below="@+id/imageView1"
+        android:layout_toStartOf="@+id/btn_play" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="40dp"
+        android:onClick="stop"
+        android:text="Stop"
+        android:background="@drawable/button_border"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_below="@+id/imageView1"
+        android:layout_toEndOf="@+id/btn_play" />
+
+    <Button
+        android:id="@+id/btn_play"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:onClick="play"
+        android:text="play"
+        android:layout_marginTop="27dp"
+        android:background="#F9E79F"
+        android:layout_below="@+id/btn_start"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:scaleType="fitXY"
+        android:src="@drawable/record"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/number0"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        app:srcCompat="@drawable/number_8"
+        android:id="@+id/number0"
+        android:layout_height="200dp"
+        android:layout_marginTop="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Eight [Hachi]"
+        android:layout_height="wrap_content"
+        android:textSize="30px"
+        android:textAlignment="center"
+        android:id="@+id/textView3"
+        android:layout_width="fill_parent"
+        android:textColor="#5D6D7E"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp" />
+</RelativeLayout>
